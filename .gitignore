@@ -1,1 +1,45 @@
+# Rust/Cargo
 /target
+**/*.rs.bk
+# If required keep Cargo.lock tracked for reproducible builds
+Cargo.lock
+
+# Coverage and profiling
+/coverage/
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+*.lcov
+*.cov
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+*.swn
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files (never commit secrets)
+.env
+.env.*
+
+# IDEs and editors
+.idea/
+.vscode/
+.fleet/
+
+# Misc build outputs
+out/
+dist/
+.cache/
+.tmp/
+
+# Git helpers
+.git-credentials
