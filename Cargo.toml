@@ -2,5 +2,20 @@
 name = "chaos_engine"
 version = "0.1.0"
 edition = "2024"
+description = "Kubernetes chaos engineering tool that simulates real-world failures to test system robustness, validate monitoring solutions, and train teams in effective debugging and incident response."
+authors = ["Upendra Vijay Dhanerwa <upendra.dhanerwa@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/upendrajangir/chaos-engine.git"
+readme = "README.md"
+keywords = ["chaos-engineering", "kubernetes", "resilience", "testing", "axum"]
+categories = ["web-programming::http-server", "network-programming", "asynchronous"]
 
 [dependencies]
+axum = { version = "0.8.4", features = ["http2"] }
+serde_json = "1.0.145"
+tokio = { version = "1.47.1", features = ["rt", "rt-multi-thread", "macros", "signal"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+thiserror = "2.0.16"
+chrono = "0.4.42"
+hyper = "1.7.0"
